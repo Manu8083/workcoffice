@@ -1,0 +1,78 @@
+.modal-cliente{
+    
+    .btn-close{
+        padding: 0;
+        margin: 0;
+        font-size: 2.5em;
+        position: absolute;
+        right: 8px;
+        top: 16px;
+        z-index: 10;
+    }
+
+    hr{
+        padding: 0;
+        margin: 0;
+    }
+
+    .cliente {
+        background-color: #ecf0f1;
+        padding-top: 22px;
+        padding-bottom: 10px;
+        .star{
+            // margin-top: 2px;
+            ion-icon{
+                color:#f1c40f;
+                font-size: 26px;
+            }
+        }
+        img{
+            width: 80px; 
+        }
+        h3{
+            color: #212121;
+            font-size: 16px;
+        }
+        h3,p{
+            padding: 0;
+            margin: 0;
+            color:#757575;        
+        }
+        button{
+            // padding:0;
+            margin-top:4px;
+        }
+    }
+
+    .comment{
+        margin-bottom: 12px;
+
+        ion-textarea{
+            box-shadow: 3px 3px 1px #bdc3c7;
+            border: 1px #bdc3c7 solid;
+            margin-bottom: 18px;   
+            color: #757575;
+        }
+        .text-input-ios{
+            margin: 2px 8px 11px 2px;
+        }
+        
+    }
+
+
+    ion-note{
+        font-size: 14px;
+    }
+
+    #mapa{
+      width: 400px;
+      height: 400px;
+      opacity: 0;
+      transition: opacity 150ms ease-in;
+      display: block;
+      &.show-map{
+        opacity: 1;
+      }
+    }
+
+}
