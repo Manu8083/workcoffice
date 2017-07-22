@@ -5,6 +5,11 @@
 
     .cafe{
         margin-bottom:8px;
+
+        .time{
+            float:right;
+            font-size:12px;
+        }
     }
 
     ion-list{
@@ -39,6 +44,7 @@
                     font-size:14px;
                 }
             }
+            
         }
     }
     .item ion-thumbnail ion-img, .item ion-thumbnail img{
