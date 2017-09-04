@@ -20,6 +20,34 @@ body{
     font-size: 16px;
 }
 
+// header for app
+ion-header{
+    ion-navbar{
+        color:#ffffff;
+        h2{
+            padding: 0;margin: 0;
+            // color: #8c8f94;
+            color:#ffffff;
+            font-size: 16px;
+            //font-family: 'roboto-light';
+            // text-transform: uppercase;
+        }
+        ion-icon{
+            font-size:32px;
+        }
+    }
+    
+    // .toolbar-ios-blanco .toolbar-title-ios, .toolbar-ios-blanco .bar-button-clear-ios, .toolbar-ios-blanco .bar-button-default-ios{
+    //     color: #8c8f94;
+    //     font-size: 12px;
+    // }
+
+    .header-md::after{
+        background-image: none;
+    }
+
+}
+
 
 .tabs {
 
@@ -30,3 +58,4 @@ body{
 .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{
     border:0;
 }
+

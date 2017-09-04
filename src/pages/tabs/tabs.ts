@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { HomePage } from '../home/home';
 import { MapaPage } from '../mapa/mapa';
-import { CuentaPage } from '../cuenta/cuenta';
+import { FavoritosPage } from '../favoritos/favoritos';
 
 import { LoginPage } from '../login/login';
 import { MasPage } from '../mas/mas';
@@ -14,7 +14,7 @@ export class TabsPage {
 
   tab1Root = HomePage;
   tab2Root = MapaPage;
-  tab3Root = CuentaPage;
+  tab3Root = FavoritosPage;
   
   tab5Root = LoginPage;
   tab6Root = MasPage;

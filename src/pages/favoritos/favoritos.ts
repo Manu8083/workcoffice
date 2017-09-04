@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { ModalController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-cuenta',
-  templateUrl: 'cuenta.html'
+  selector: 'page-favoritos',
+  templateUrl: 'favoritos.html'
 })
-export class CuentaPage {
+export class FavoritosPage {
+	
 
   constructor(public modal:ModalController) {
 

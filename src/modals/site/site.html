@@ -1,5 +1,5 @@
 <!--
-  Generated template for the ModalCliente page.
+  Generated template for the ModalSite page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -13,11 +13,11 @@
     
     <ion-row>
       <ion-col col-4 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center>
-        <img src="assets/images/iconos/{{data.logo}}.png" alt="">
+        <img src="assets/images/starbucks.png" alt="">
       </ion-col>
 
       <ion-col col-8 col-sm-6 col-md-6 col-lg-6 col-xl-6>
-        <h3>{{data.name}}</h3>
+        <h3>Starbucks</h3>
         <div class="info">
           <p>Telefono: 12334423</p>
           <p>Dirección: Calle 2 # 12 - 32</p>
@@ -28,11 +28,10 @@
             <ion-icon name="star"></ion-icon>
             <ion-icon name="star"></ion-icon>
           </p>
-          <button ion-button icon-left color="secondary" small outline>
+         <!--  <button ion-button icon-left color="secondary" small outline>
             <ion-icon name="call"></ion-icon>
             Llamar
-            
-          </button>
+          </button> -->
         </div>
       </ion-col>
 
@@ -46,12 +45,12 @@
       <ion-segment-button value="services">
         Servicios
       </ion-segment-button>
+      <ion-segment-button value="menu">
+        Menú
+      </ion-segment-button>
       <ion-segment-button value="comments">
         Comentarios
       </ion-segment-button>
-      <!-- <ion-segment-button value="mapa">
-        Mapa
-      </ion-segment-button> -->
     </ion-segment>
   </div>
 
@@ -60,38 +59,60 @@
   <ion-list *ngSwitchCase="'services'">
 
     <ion-item>
+        Corriente Eléctrica
+      <ion-icon class="service" name="checkmark" item-end></ion-icon>
+    </ion-item>
+
+    <ion-item>
+        Wifi
+      <ion-icon class="service" name="checkmark" item-end></ion-icon>
+    </ion-item>
+
+    <ion-item>
+        Mesas de trabajo
+      <ion-icon class="service" name="checkmark" item-end></ion-icon>
+    </ion-item>
+
+    <ion-item>
+        Sillas comodas
+      <ion-icon class="service" name="close" item-end></ion-icon>
+    </ion-item>
+
+    <ion-item>
+        Libre de humo
+      <ion-icon class="service" name="checkmark" item-end></ion-icon>
+    </ion-item>
+
+
+  
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'menu'">
+
+    <ion-item>
       <ion-thumbnail item-start>
-        <img src="assets/images/comida.jpg">
+        <img src="http://www.juanvaldezcafe.com/sites/default/files/kisses-latte-caramelo.jpg">
       </ion-thumbnail>
-      <h2>Ruby</h2>
-      <p>Deliciosa hamburguesa con doble porción de papas, ideal para calmar tu hambre, maldito hambriento!</p>
+      <h2 color="gris">LATTE</h2>
+      <p>Una bebida deliciosa a base de espresso, preparada con menos cantidad de café del tradicional y complementada con una salsa de caramelo Hershey's, leche caliente y leche vaporizada que despertará muchas emociones en ti.</p>
       <p>$20.000</p>
     </ion-item>
 
     <ion-item>
       <ion-thumbnail item-start>
-        <img src="assets/images/comida.jpg">
+        <img src="http://www.juanvaldezcafe.com/sites/default/files/kisses-nevado.jpg">
       </ion-thumbnail>
-      <h2>Ruby</h2>
-      <p>Deliciosa hamburguesa con doble porción de papas, ideal para calmar tu hambre, maldito hambriento!</p>
-      <p>$30.000</p>
+      <h2 color="gris">Nevato de Café con Kisses</h2>
+      <p>La magia de esta bebida fría de textura densa y helada, preparada con café espresso, base láctea, hielo, salsa Hershey's de caramelo y chocolate, decorada con crema de chantilly y kisses de dos variedades (cookies & cream, milk chocolate) y con un toque de salsa de chocolate, hará que sea tu antojo favorito.</p>
+      <p>$20.000</p>
     </ion-item>
-
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="assets/images/comida.jpg">
-      </ion-thumbnail>
-      <h2>Ruby</h2>
-      <p>Deliciosa hamburguesa con doble porción de papas, ideal para calmar tu hambre, maldito hambriento!</p>
-      <p>$15.500</p>
-    </ion-item>
-  
+    
   </ion-list>
 
   <ion-list *ngSwitchCase="'comments'">
     <div padding class="comment">
        <ion-textarea rows="4" placeholder="Ingresa tus comentarios"></ion-textarea>
-       <button color="secondary" ion-button block>Comentar</button>
+       <button color="primary" ion-button block>Comentar</button>
     </div>
     <ion-item>
       <ion-avatar item-start>
@@ -114,11 +135,6 @@
     
   </ion-list>
 
-  <!-- <ion-list *ngSwitchCase="'mapa'">
-
-    <div id="mapa"></div>
-    
-  </ion-list> -->
 </div>
 
 

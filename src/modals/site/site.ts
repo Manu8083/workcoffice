@@ -2,17 +2,17 @@ import { Component } from '@angular/core';
 import { IonicPage, NavParams, ViewController } from 'ionic-angular';
 
 /**
- * Generated class for the ModalCliente page.
+ * Generated class for the ModalSite page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 @IonicPage()
 @Component({
-  selector: 'modal-cliente',
-  templateUrl: 'cliente.html',
+  selector: 'modal-site',
+  templateUrl: 'site.html',
 })
-export class ModalCliente {
+export class ModalSite {
   public data:string;
   public pet: string = "services";
 

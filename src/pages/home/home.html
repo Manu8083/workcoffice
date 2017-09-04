@@ -1,10 +1,20 @@
 <!--  page home -->
+<ion-header>
+  <ion-navbar color="hedaer">
+    <h2 class="title">Workoffice</h2>
+    <ion-buttons end>
+      <button ion-button (click)="openModalLogin()">
+        <ion-icon name="contact"></ion-icon>
+      </button>
+    </ion-buttons>  
+  </ion-navbar>
+</ion-header>
 
 <ion-content class="page-home">
 
   <ion-list>
 
-    <div class="cafe">
+    <div class="cafe" (click)="openModalSite()">
 
       <ion-item>
         <ion-thumbnail item-start>
@@ -55,7 +65,7 @@
 
     </div>
 
-    <div class="cafe">
+    <div class="cafe" (click)="openModalSite()">
 
       <ion-item>
         <ion-thumbnail item-start>
@@ -110,7 +120,7 @@
     </div>
 
 
-    <div class="cafe">
+    <div class="cafe" (click)="openModalSite()">
 
       <ion-item>
         <ion-thumbnail item-start>

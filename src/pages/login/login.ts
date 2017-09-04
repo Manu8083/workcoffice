@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, ModalController } from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
 
 @Component({
   selector: 'page-login',
@@ -7,7 +7,7 @@ import { NavController, ModalController } from 'ionic-angular';
 })
 export class LoginPage {
 
-  constructor(public modal: ModalController, public nav: NavController) {
+  constructor(public modal: ModalController ) {
 
   }
   
